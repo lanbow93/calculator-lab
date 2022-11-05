@@ -2,7 +2,6 @@ require('dotenv').config();
 const express = require ("express")
 const app = express();
 
-
 app.get("/calc/:num1/:num2", (request, response) => {
     response.send(`The sum is: ${parseInt(request.params.num1) + parseInt(request.params.num2)}`)
 })
